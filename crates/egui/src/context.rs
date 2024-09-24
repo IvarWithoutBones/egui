@@ -2136,7 +2136,7 @@ impl Context {
 
         pos.x = pos.x.at_most(area.right() + margin_x - window.width()); // move left if needed
         pos.x = pos.x.at_least(area.left() - margin_x); // move right if needed
-        pos.y = pos.y.at_most(area.bottom() + margin_y - window.height()); // move right if needed
+        pos.y = pos.y.at_most(area.bottom() + margin_y - window.height()); // move up if needed
         pos.y = pos.y.at_least(area.top() - margin_y); // move down if needed
 
         pos = self.round_pos_to_pixels(pos);

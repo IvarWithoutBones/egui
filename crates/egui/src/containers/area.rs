@@ -491,7 +491,7 @@ impl Area {
             move_response
         };
 
-        if constrain {
+        if constrain && !sizing_pass {
             state.set_left_top_pos(
                 ctx.constrain_window_rect_to_area(state.rect(), constrain_rect)
                     .min,
